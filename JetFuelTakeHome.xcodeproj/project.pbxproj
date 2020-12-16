@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B2B28CBDD6AD4CBD699DE5 /* Pods_JetFuelTakeHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB0CD8DA4A9F036728C6FB2 /* Pods_JetFuelTakeHome.framework */; };
+		110146292586C8D000584B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110146282586C8D000584B07 /* AppDelegate.swift */; };
+		1101462B2586C8D000584B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101462A2586C8D000584B07 /* SceneDelegate.swift */; };
+		1101462D2586C8D000584B07 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101462C2586C8D000584B07 /* FeedController.swift */; };
+		110146302586C8D000584B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1101462E2586C8D000584B07 /* Main.storyboard */; };
+		110146322586C8D200584B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110146312586C8D200584B07 /* Assets.xcassets */; };
+		110146352586C8D200584B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110146332586C8D200584B07 /* LaunchScreen.storyboard */; };
+		1101464A2586CA7500584B07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110146492586CA7500584B07 /* Extensions.swift */; };
+		1155B1FE258809E700537396 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B1FD258809E700537396 /* Service.swift */; };
+		1155B20125880B6B00537396 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20025880B6B00537396 /* Campaign.swift */; };
+		1155B2042588125A00537396 /* CampaignCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B2032588125A00537396 /* CampaignCollectionViewCell.swift */; };
+		11C55D252589CA5A00F1497A /* CampaignCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */; };
+		11C55D292589E2D400F1497A /* CampaignMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C55D282589E2D400F1497A /* CampaignMediaCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110146252586C8D000584B07 /* JetFuelTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JetFuelTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		110146282586C8D000584B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1101462A2586C8D000584B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1101462C2586C8D000584B07 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		1101462F2586C8D000584B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		110146312586C8D200584B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		110146342586C8D200584B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		110146362586C8D200584B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110146492586CA7500584B07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1155B1FD258809E700537396 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1155B20025880B6B00537396 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		1155B2032588125A00537396 /* CampaignCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignCollectionViewCell.swift; sourceTree = "<group>"; };
+		11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignCellViewModel.swift; sourceTree = "<group>"; };
+		11C55D282589E2D400F1497A /* CampaignMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D7A1F6EA07C162D8D3C32FC /* Pods-JetFuelTakeHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuelTakeHome.debug.xcconfig"; path = "Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome.debug.xcconfig"; sourceTree = "<group>"; };
+		6F4CF86EEE5FBDFC4C543BEA /* Pods-JetFuelTakeHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuelTakeHome.release.xcconfig"; path = "Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome.release.xcconfig"; sourceTree = "<group>"; };
+		EBB0CD8DA4A9F036728C6FB2 /* Pods_JetFuelTakeHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetFuelTakeHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		110146222586C8D000584B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B2B28CBDD6AD4CBD699DE5 /* Pods_JetFuelTakeHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1101461C2586C8D000584B07 = {
+			isa = PBXGroup;
+			children = (
+				110146272586C8D000584B07 /* JetFuelTakeHome */,
+				110146262586C8D000584B07 /* Products */,
+				D6D69AC58A20F142D2A31A1E /* Pods */,
+				68F400647B1A835D6F7E17F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		110146262586C8D000584B07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110146252586C8D000584B07 /* JetFuelTakeHome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		110146272586C8D000584B07 /* JetFuelTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				110146482586CA3A00584B07 /* Model */,
+				110146472586CA3600584B07 /* View */,
+				110146462586CA3200584B07 /* ViewModel */,
+				110146452586CA3000584B07 /* Controller */,
+				110146442586CA2F00584B07 /* API */,
+				110146432586CA2D00584B07 /* Util */,
+				110146282586C8D000584B07 /* AppDelegate.swift */,
+				1101462A2586C8D000584B07 /* SceneDelegate.swift */,
+				1101462E2586C8D000584B07 /* Main.storyboard */,
+				110146312586C8D200584B07 /* Assets.xcassets */,
+				110146332586C8D200584B07 /* LaunchScreen.storyboard */,
+				110146362586C8D200584B07 /* Info.plist */,
+			);
+			path = JetFuelTakeHome;
+			sourceTree = "<group>";
+		};
+		110146432586CA2D00584B07 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				110146492586CA7500584B07 /* Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		110146442586CA2F00584B07 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1155B1FD258809E700537396 /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		110146452586CA3000584B07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1101462C2586C8D000584B07 /* FeedController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		110146462586CA3200584B07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		110146472586CA3600584B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1155B2032588125A00537396 /* CampaignCollectionViewCell.swift */,
+				11C55D282589E2D400F1497A /* CampaignMediaCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		110146482586CA3A00584B07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1155B20025880B6B00537396 /* Campaign.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68F400647B1A835D6F7E17F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB0CD8DA4A9F036728C6FB2 /* Pods_JetFuelTakeHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D69AC58A20F142D2A31A1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F6EA07C162D8D3C32FC /* Pods-JetFuelTakeHome.debug.xcconfig */,
+				6F4CF86EEE5FBDFC4C543BEA /* Pods-JetFuelTakeHome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		110146242586C8D000584B07 /* JetFuelTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110146392586C8D200584B07 /* Build configuration list for PBXNativeTarget "JetFuelTakeHome" */;
+			buildPhases = (
+				876741EA24EDE79CE97E4435 /* [CP] Check Pods Manifest.lock */,
+				110146212586C8D000584B07 /* Sources */,
+				110146222586C8D000584B07 /* Frameworks */,
+				110146232586C8D000584B07 /* Resources */,
+				EBDC78150013447A5272F168 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JetFuelTakeHome;
+			productName = JetFuelTakeHome;
+			productReference = 110146252586C8D000584B07 /* JetFuelTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1101461D2586C8D000584B07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					110146242586C8D000584B07 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 110146202586C8D000584B07 /* Build configuration list for PBXProject "JetFuelTakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1101461C2586C8D000584B07;
+			productRefGroup = 110146262586C8D000584B07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				110146242586C8D000584B07 /* JetFuelTakeHome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		110146232586C8D000584B07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110146352586C8D200584B07 /* LaunchScreen.storyboard in Resources */,
+				110146322586C8D200584B07 /* Assets.xcassets in Resources */,
+				110146302586C8D000584B07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		876741EA24EDE79CE97E4435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JetFuelTakeHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBDC78150013447A5272F168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		110146212586C8D000584B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1155B20125880B6B00537396 /* Campaign.swift in Sources */,
+				1101462D2586C8D000584B07 /* FeedController.swift in Sources */,
+				110146292586C8D000584B07 /* AppDelegate.swift in Sources */,
+				1155B1FE258809E700537396 /* Service.swift in Sources */,
+				1155B2042588125A00537396 /* CampaignCollectionViewCell.swift in Sources */,
+				1101462B2586C8D000584B07 /* SceneDelegate.swift in Sources */,
+				1101464A2586CA7500584B07 /* Extensions.swift in Sources */,
+				11C55D292589E2D400F1497A /* CampaignMediaCollectionViewCell.swift in Sources */,
+				11C55D252589CA5A00F1497A /* CampaignCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1101462E2586C8D000584B07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1101462F2586C8D000584B07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		110146332586C8D200584B07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110146342586C8D200584B07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		110146372586C8D200584B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		110146382586C8D200584B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1101463A2586C8D200584B07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7A1F6EA07C162D8D3C32FC /* Pods-JetFuelTakeHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8Z6DLFKLR;
+				INFOPLIST_FILE = JetFuelTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanleytraub.JetFuelTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1101463B2586C8D200584B07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4CF86EEE5FBDFC4C543BEA /* Pods-JetFuelTakeHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8Z6DLFKLR;
+				INFOPLIST_FILE = JetFuelTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stanleytraub.JetFuelTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		110146202586C8D000584B07 /* Build configuration list for PBXProject "JetFuelTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110146372586C8D200584B07 /* Debug */,
+				110146382586C8D200584B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110146392586C8D200584B07 /* Build configuration list for PBXNativeTarget "JetFuelTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1101463A2586C8D200584B07 /* Debug */,
+				1101463B2586C8D200584B07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1101461D2586C8D000584B07 /* Project object */;
+}
