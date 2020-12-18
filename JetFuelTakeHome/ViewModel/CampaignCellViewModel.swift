@@ -26,7 +26,6 @@ struct CampaignCellViewModel {
                                                          attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                                                       .foregroundColor: #colorLiteral(red: 0, green: 0.5775609016, blue: 0.1883395016, alpha: 1)])
         
-        
         attributedString.append(NSAttributedString(string: " per install", attributes: [.font: UIFont.systemFont(ofSize: 20),
                                                                                         .foregroundColor: #colorLiteral(red: 0, green: 0.5775609016, blue: 0.1883395016, alpha: 1)]))
         return attributedString
