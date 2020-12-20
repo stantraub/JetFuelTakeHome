@@ -36,6 +36,4 @@ struct CampaignCellViewModel {
     init(campaign: Campaign) {
         self.campaign = campaign
     }
-    
-    // MARK: - Helpers
 }
