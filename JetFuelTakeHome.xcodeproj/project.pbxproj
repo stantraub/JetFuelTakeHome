@@ -18,6 +18,8 @@
 		1155B1FE258809E700537396 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B1FD258809E700537396 /* Service.swift */; };
 		1155B20125880B6B00537396 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B20025880B6B00537396 /* Campaign.swift */; };
 		1155B2042588125A00537396 /* CampaignCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155B2032588125A00537396 /* CampaignCollectionViewCell.swift */; };
+		1168596F264F1AE8009FBDFE /* CampaignMediaCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168596E264F1AE8009FBDFE /* CampaignMediaCellViewModel.swift */; };
+		11685971264F1BC6009FBDFE /* FeedControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11685970264F1BC6009FBDFE /* FeedControllerViewModel.swift */; };
 		11C55D252589CA5A00F1497A /* CampaignCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */; };
 		11C55D292589E2D400F1497A /* CampaignMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C55D282589E2D400F1497A /* CampaignMediaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		1155B1FD258809E700537396 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1155B20025880B6B00537396 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		1155B2032588125A00537396 /* CampaignCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignCollectionViewCell.swift; sourceTree = "<group>"; };
+		1168596E264F1AE8009FBDFE /* CampaignMediaCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignMediaCellViewModel.swift; sourceTree = "<group>"; };
+		11685970264F1BC6009FBDFE /* FeedControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedControllerViewModel.swift; sourceTree = "<group>"; };
 		11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignCellViewModel.swift; sourceTree = "<group>"; };
 		11C55D282589E2D400F1497A /* CampaignMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignMediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D7A1F6EA07C162D8D3C32FC /* Pods-JetFuelTakeHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFuelTakeHome.debug.xcconfig"; path = "Target Support Files/Pods-JetFuelTakeHome/Pods-JetFuelTakeHome.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,10 +79,10 @@
 		110146272586C8D000584B07 /* JetFuelTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				110146452586CA3000584B07 /* Controller */,
 				110146482586CA3A00584B07 /* Model */,
 				110146472586CA3600584B07 /* View */,
 				110146462586CA3200584B07 /* ViewModel */,
-				110146452586CA3000584B07 /* Controller */,
 				110146442586CA2F00584B07 /* API */,
 				110146432586CA2D00584B07 /* Util */,
 				110146282586C8D000584B07 /* AppDelegate.swift */,
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				11C55D242589CA5A00F1497A /* CampaignCellViewModel.swift */,
+				1168596E264F1AE8009FBDFE /* CampaignMediaCellViewModel.swift */,
+				11685970264F1BC6009FBDFE /* FeedControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				1101462D2586C8D000584B07 /* FeedController.swift in Sources */,
 				110146292586C8D000584B07 /* AppDelegate.swift in Sources */,
 				1155B1FE258809E700537396 /* Service.swift in Sources */,
+				11685971264F1BC6009FBDFE /* FeedControllerViewModel.swift in Sources */,
+				1168596F264F1AE8009FBDFE /* CampaignMediaCellViewModel.swift in Sources */,
 				1155B2042588125A00537396 /* CampaignCollectionViewCell.swift in Sources */,
 				1101462B2586C8D000584B07 /* SceneDelegate.swift in Sources */,
 				1101464A2586CA7500584B07 /* Extensions.swift in Sources */,

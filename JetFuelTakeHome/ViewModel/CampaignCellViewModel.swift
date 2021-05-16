@@ -12,6 +12,12 @@ struct CampaignCellViewModel {
     // MARK: - Properties
     
     var campaign: Campaign
+    var medias: [Media] {
+        campaign.medias
+    }
+    var numberOfItems: Int {
+        campaign.medias.count
+    }
     
     var campaignIconURL: URL? {
         return URL(string: campaign.campaignIconURL)

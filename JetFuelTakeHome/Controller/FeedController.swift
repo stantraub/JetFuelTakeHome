@@ -7,37 +7,34 @@
 
 import UIKit
 
-class FeedController: UICollectionViewController {
-    
-    // MARK: - Properties
-    
-    private var campaigns = [Campaign]()
+final class FeedController: UICollectionViewController {
     
     // MARK: - Lifecycle
+    
+    private var viewModel = FeedControllerViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchCampaigns()
+        bindViewModel()
+        viewModel.fetchCampaigns()
         configureUI()
     }
     
-    // MARK: - API
+    // MARK: - Helpers
     
-    private func fetchCampaigns() {
-        Service.fetchCampaigns { [weak self] result in
-            switch result {
-            case .success(let campaigns):
-                self?.campaigns = campaigns
-                DispatchQueue.main.async { [weak self] in
-                    self?.collectionView.reloadData()
+    private func bindViewModel() {
+        viewModel.fetchedCampaignsCompletion = { [weak self] error in
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                DispatchQueue.main.async {
+                    strongSelf.collectionView.reloadData()
                 }
-            case .failure(let error):
-                print(error)
             }
         }
     }
-    
-    // MARK: - Helpers
     
     private func configureUI() {
         navigationItem.title = "PLUGS"
@@ -53,13 +50,14 @@ class FeedController: UICollectionViewController {
 
 extension FeedController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return campaigns.count
+        viewModel.numberOfRows
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let campaign = campaigns[indexPath.row]
+        let campaign = viewModel.campaigns[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CampaignCollectionViewCell.identifier, for: indexPath) as! CampaignCollectionViewCell
-        cell.viewModel = CampaignCellViewModel(campaign: campaign)
+        let viewModel = CampaignCellViewModel(campaign: campaign)
+        cell.configure(with: viewModel)
         return cell
     }
 }

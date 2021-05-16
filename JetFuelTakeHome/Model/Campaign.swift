@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct CampaignResponse: Decodable {
+    let campaigns: [Campaign]
+}
+
 struct Campaign: Decodable {
     let id: Int
     let campaignName: String
@@ -24,10 +28,10 @@ struct Campaign: Decodable {
 }
 
 struct Media: Decodable {
-    let coverPhotoURL: String
-    let downloadURL: String
-    let trackingLink: String
-    let mediaType: String
+    let coverPhotoURL: String?
+    let downloadURL: String?
+    let trackingLink: String?
+    let mediaType: String?
     
     enum CodingKeys: String, CodingKey {
         case coverPhotoURL = "cover_photo_url"
@@ -36,3 +40,4 @@ struct Media: Decodable {
         case mediaType = "media_type"
     }
 }
+

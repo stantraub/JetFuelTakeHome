@@ -6,19 +6,17 @@
 //
 
 import Alamofire
-import SwiftyJSON
 
 struct Service {
-    static func fetchCampaigns(completion: @escaping(Result<[Campaign], Error>) -> Void) {
+    static func fetchCampaigns(completion: @escaping(Result<CampaignResponse, Error>) -> Void) {
         let endpoint = "https://www.plugco.in/public/take_home_sample_feed"
         
         AF.request(endpoint).responseJSON { response in
             guard let data = response.data else { return }
             do {
-                let json = try JSON(data: data)
                 let decoder = JSONDecoder()
-                let offers = try decoder.decode([Campaign].self, from: try json["campaigns"].rawData())
-                completion(.success(offers))
+                let campaigns = try decoder.decode(CampaignResponse.self, from: data)
+                completion(.success(campaigns))
             } catch let jsonErr {
                 completion(.failure(DecodingError.failedToDecode(error: jsonErr)))
             }

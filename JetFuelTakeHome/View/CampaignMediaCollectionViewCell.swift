@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CampaignMediaCollectionViewCell: UICollectionViewCell {
+final class CampaignMediaCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
     static let identifier = "CampaignMediaCollectionViewCell"
-    
+        
     // MARK: - Lifecycle
     
     override init(frame: CGRect) {
@@ -25,4 +25,8 @@ class CampaignMediaCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Helpers
+    
+    func configure(with viewModel: CampaignMediaCellViewModel) {
+        
+    }
 }

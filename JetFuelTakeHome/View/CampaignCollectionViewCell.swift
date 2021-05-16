@@ -8,17 +8,13 @@
 import UIKit
 import SDWebImage
 
-class CampaignCollectionViewCell: UICollectionViewCell {
+final class CampaignCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
     static let identifier = "CampaignCollectionViewCell"
     
-    var viewModel: CampaignCellViewModel? {
-        didSet { configureWithViewModel() }
-    }
-    
-    private var medias = [Media]()
+    var viewModel: CampaignCellViewModel!
     
     private let headerContainerView: UIView = {
         let view = UIView()
@@ -74,11 +70,6 @@ class CampaignCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.register(CampaignMediaCollectionViewCell.self, forCellWithReuseIdentifier: CampaignMediaCollectionViewCell.identifier)
-
-        
     }
     
     required init?(coder: NSCoder) {
@@ -88,6 +79,10 @@ class CampaignCollectionViewCell: UICollectionViewCell {
     // MARK: - Helpers
     
     private func configureUI() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(CampaignMediaCollectionViewCell.self, forCellWithReuseIdentifier: CampaignMediaCollectionViewCell.identifier)
+        
         addSubview(headerContainerView)
         headerContainerView.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor)
         headerContainerView.setHeight(120)
@@ -112,8 +107,8 @@ class CampaignCollectionViewCell: UICollectionViewCell {
     }
 
     
-    private func configureWithViewModel() {
-        guard let viewModel = viewModel else { return }
+    func configure(with viewModel: CampaignCellViewModel) {
+        self.viewModel = viewModel
         campaignIcon.sd_setImage(with: viewModel.campaignIconURL)
         campaignNameLabel.text = viewModel.campaignName
         payPerInstallLabel.attributedText = viewModel.payPerInstall
@@ -122,14 +117,14 @@ class CampaignCollectionViewCell: UICollectionViewCell {
 
 extension CampaignCollectionViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        guard let viewModel = viewModel else { return 0 }
-//        return viewModel.campaign.medias.count
-        return 4
+        viewModel.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let media = medias[indexPath.row]
+        let media = viewModel.medias[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CampaignMediaCollectionViewCell.identifier, for: indexPath) as! CampaignMediaCollectionViewCell
+        let model = CampaignMediaCellViewModel(media: media)
+        cell.configure(with: model)
         return cell
     }
     
